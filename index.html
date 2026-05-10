@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquiFlow - Plataforma Integral de Gestión de Equipos Académicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>EquiFlow</span>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-btn active" data-section="hero">Inicio</button>
+                <button class="nav-btn" data-section="introduccion">Introducción</button>
+                <button class="nav-btn" data-section="problema">Problema</button>
+                <button class="nav-btn" data-section="solucion">Solución</button>
+                <button class="nav-btn" data-section="dofa">DOFA</button>
+                <button class="nav-btn" data-section="pestel">PESTEL</button>
+                <button class="nav-btn" data-section="canvas">Canvas</button>
+                <button class="nav-btn" data-section="inversion">Inversión</button>
+                <button class="nav-btn" data-section="riesgos">Riesgos</button>
+                <button class="nav-btn" data-section="plan">Plan</button>
+                <button class="nav-btn" data-section="conclusiones">Conclusiones</button>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="background-animation"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">EquiFlow</h1>
+            <p class="hero-subtitle">Plataforma Integral de Gestión y Fortalecimiento de Equipos Académicos</p>
+            <p class="hero-description">Una propuesta de intervención técnica y humana para equipos de trabajo universitarios</p>
+            <button class="btn btn-primary" id="explorar-btn">
+                Explorar Proyecto
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Introducción -->
+    <section id="introduccion" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                Introducción
+            </h2>
+            <div class="intro-grid">
+                <div class="intro-card fade-in">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Estudio de Mercado</h3>
+                    <p>Se validó que la falta de interacción y coordinación es un factor determinante que impacta negativamente el bienestar emocional de los estudiantes.</p>
+                </div>
+                <div class="intro-card fade-in" style="animation-delay: 0.2s">
+                    <i class="fas fa-university"></i>
+                    <h3>Contexto Institucional</h3>
+                    <p>La problemática se identificó en los entornos de trabajo colaborativo de la Universidad Católica Luis Amigó.</p>
+                </div>
+                <div class="intro-card fade-in" style="animation-delay: 0.4s">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Solución Integral</h3>
+                    <p>Combina soluciones técnicas y humanas para mejorar el rendimiento de los equipos académicos.</p>
+                </div>
+            </div>
+
+            <div class="highlight-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>"La falta de interacción y coordinación impacta negativamente el bienestar emocional y la productividad académica de los estudiantes."</p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+
+            <div class="intro-issues">
+                <h3>Problemática Identificada</h3>
+                <div class="issues-grid">
+                    <div class="issue-item">
+                        <div class="issue-icon">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <h4>Falta de Comunicación</h4>
+                        <p>Dificultades en la comunicación dentro de los equipos</p>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-icon">
+                            <i class="fas fa-users-slash"></i>
+                        </div>
+                        <h4>Ausencia de Roles</h4>
+                        <p>Falta de definición clara de roles y responsabilidades</p>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h4>Coordinación Ineficaz</h4>
+                        <p>Inadecuada gestión de responsabilidades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema -->
+    <section id="problema" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                Declaración del Problema
+            </h2>
+            <p class="section-intro">El problema central identificado es la baja productividad y el deterioro del bienestar emocional de los estudiantes universitarios.</p>
+
+            <div class="problema-grid">
+                <div class="problema-card expandable">
+                    <div class="problema-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Estrés Prolongado y Frustración</h3>
+                        <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="problema-content">
+                        <p>Los estudiantes sufren las consecuencias de la mala comunicación y la falta de coordinación, lo que conduce al estancamiento académico y afecta su vida personal.</p>
+                    </div>
+                </div>
+
+                <div class="problema-card expandable">
+                    <div class="problema-header">
+                        <i class="fas fa-clock"></i>
+                        <h3>Reprocesos y Pérdida de Tiempo</h3>
+                        <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="problema-content">
+                        <p>La mala coordinación conlleva a la pérdida de tiempo en actividades que deben rehacerse, afectando la eficiencia del equipo.</p>
+                    </div>
+                </div>
+
+                <div class="problema-card expandable">
+                    <div class="problema-header">
+                        <i class="fas fa-door-open"></i>
+                        <h3>Ambiente de Estudio Incómodo</h3>
+                        <span class="expand-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="problema-content">
+                        <p>La falta de interacción positiva obstaculiza el proceso de aprendizaje colaborativo y deteriora la motivación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problema-summary">
+                <p><strong>En síntesis:</strong> El problema no se limita al rendimiento académico medible, sino que abarca el clima emocional, la experiencia de trabajo en equipo y la sostenibilidad de los procesos colaborativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solución -->
+    <section id="solucion" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                Solución Propuesta
+            </h2>
+
+            <p class="section-intro">La solución es una Plataforma Integral de Gestión y Fortalecimiento de Equipos Académicos que combina componentes técnicos y humanos.</p>
+
+            <div class="solution-toggle">
+                <button class="solution-tab active" data-tab="tecnica">
+                    <i class="fas fa-cog"></i>
+                    Intervención Técnica
+                </button>
+                <button class="solution-tab" data-tab="humana">
+                    <i class="fas fa-heart"></i>
+                    Intervención Humana
+                </button>
+            </div>
+
+            <div class="solution-content">
+                <!-- Intervención Técnica -->
+                <div class="solution-panel active" id="tecnica-panel">
+                    <h3>Estructuración de Roles y Tareas</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Asignación de Roles</h4>
+                            <p>Herramientas para la asignación clara de roles dentro del equipo.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h4>Seguimiento de Tareas</h4>
+                            <p>Permitir el seguimiento de tareas, responsables y fechas de entrega.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hourglass-end"></i>
+                            </div>
+                            <h4>Gestión de Tiempos</h4>
+                            <p>Gestionar tiempos y cargas de trabajo para evitar saturación.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Reportes de Avance</h4>
+                            <p>Generar reportes que permitan identificar cuellos de botella.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intervención Humana -->
+                <div class="solution-panel" id="humana-panel">
+                    <h3>Comunicación y Motivación</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Comunicación Asertiva</h4>
+                            <p>Módulos de capacitación sobre comunicación efectiva.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Trabajo en Equipo</h4>
+                            <p>Fomento del trabajo colaborativo y coordinado.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h4>Liderazgo Colaborativo</h4>
+                            <p>Desarrollo de habilidades de liderazgo moderno.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-peace-hand"></i>
+                            </div>
+                            <h4>Resolución de Conflictos</h4>
+                            <p>Contenidos sobre manejo de desacuerdos y conflictos.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h4>Motivación</h4>
+                            <p>Elementos de motivación y reconocimiento al esfuerzo.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Retroalimentación Constructiva</h4>
+                            <p>Prácticas de retroalimentación entre miembros del equipo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOFA -->
+    <section id="dofa" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04</span>
+                Matriz DOFA
+            </h2>
+
+            <div class="dofa-grid">
+                <div class="dofa-card fortalezas">
+                    <div class="dofa-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Fortalezas</h3>
+                    </div>
+                    <ul class="dofa-list">
+                        <li class="dofa-item">
+                            <strong>F1.</strong> Identificación clara y validada del problema central (falta de coordinación y bienestar).
+                        </li>
+                        <li class="dofa-item">
+                            <strong>F2.</strong> Enfoque dual (técnico + humano) que permite una solución integral.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dofa-card oportunidades">
+                    <div class="dofa-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Oportunidades</h3>
+                    </div>
+                    <ul class="dofa-list">
+                        <li class="dofa-item">
+                            <strong>O1.</strong> Alta demanda, ya que existen numerosos grupos con bajo rendimiento académico.
+                        </li>
+                        <li class="dofa-item">
+                            <strong>O2.</strong> Posibilidad de alianzas con el área de Bienestar Universitario.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dofa-card debilidades">
+                    <div class="dofa-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Debilidades</h3>
+                    </div>
+                    <ul class="dofa-list">
+                        <li class="dofa-item">
+                            <strong>D1.</strong> Dependencia de que los usuarios adopten la solución.
+                        </li>
+                        <li class="dofa-item">
+                            <strong>D2.</strong> Posible resistencia inicial a la capacitación en habilidades blandas.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dofa-card amenazas">
+                    <div class="dofa-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Amenazas</h3>
+                    </div>
+                    <ul class="dofa-list">
+                        <li class="dofa-item">
+                            <strong>A1.</strong> Existencia de herramientas genéricas de gestión de proyectos (competencia).
+                        </li>
+                        <li class="dofa-item">
+                            <strong>A2.</strong> Baja participación sostenida por parte de los estudiantes en procesos voluntarios.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PESTEL -->
+    <section id="pestel" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05</span>
+                Análisis PESTEL
+            </h2>
+
+            <div class="pestel-grid">
+                <div class="pestel-card">
+                    <div class="pestel-card-header politicos">
+                        <i class="fas fa-landmark"></i>
+                        <h3>Políticos</h3>
+                    </div>
+                    <div class="pestel-card-content">
+                        <p>El proyecto se desarrolla en un entorno educativo regulado por políticas institucionales. La alineación con las políticas institucionales y los lineamientos del Ministerio de Educación es clave para la sostenibilidad.</p>
+                    </div>
+                </div>
+
+                <div class="pestel-card">
+                    <div class="pestel-card-header economicos">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Económicos</h3>
+                    </div>
+                    <div class="pestel-card-content">
+                        <p>El acceso a recursos financieros por parte de los estudiantes y la institución afecta la implementación. La viabilidad dependerá de un uso eficiente de los recursos y claridad en la propuesta de valor.</p>
+                    </div>
+                </div>
+
+                <div class="pestel-card">
+                    <div class="pestel-card-header sociales">
+                        <i class="fas fa-people-group"></i>
+                        <h3>Sociales</h3>
+                    </div>
+                    <div class="pestel-card-content">
+                        <p>El proyecto responde a problemáticas como estrés académico, desgaste emocional y falta de comunicación. Considera hábitos de estudio y disposición de los estudiantes para nuevas dinámicas colaborativas.</p>
+                    </div>
+                </div>
+
+                <div class="pestel-card">
+                    <div class="pestel-card-header tecnologicos">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Tecnológicos</h3>
+                    </div>
+                    <div class="pestel-card-content">
+                        <p>La disponibilidad de herramientas digitales, acceso a internet y alfabetización tecnológica son factores clave. Incluye integración con plataformas educativas existentes y acceso móvil.</p>
+                    </div>
+                </div>
+
+                <div class="pestel-card">
+                    <div class="pestel-card-header ecologicos">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Ecológicos</h3>
+                    </div>
+                    <div class="pestel-card-content">
+                        <p>El uso de una plataforma digital contribuye a la reducción del consumo de papel y disminución de impresiones físicas, promoviendo prácticas más sostenibles.</p>
+                    </div>
+                </div>
+
+                <div class="pestel-card">
+                    <div class="pestel-card-header legales">
+                        <i class="fas fa-gavel"></i>
+                        <h3>Legales</h3>
+                    </div>
+                    <div class="pestel-card-content">
+                        <p>Debe cumplir con normativas sobre protección de datos personales y regulaciones de plataformas digitales educativas. Es fundamental garantizar confidencialidad e integridad de datos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Canvas -->
+    <section id="canvas" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06</span>
+                Modelo de Negocios Canvas
+            </h2>
+
+            <div class="canvas-wrapper">
+                <div class="canvas-grid">
+                    <div class="canvas-block socios-clave">
+                        <h4>Socios Clave</h4>
+                        <ul>
+                            <li>Universidades</li>
+                            <li>Desarrolladores</li>
+                            <li>Comunidades estudiantiles</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block actividades-clave">
+                        <h4>Actividades Clave</h4>
+                        <ul>
+                            <li>Desarrollo de software</li>
+                            <li>Mantenimiento y actualizaciones</li>
+                            <li>Desarrollo de habilidades blandas</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block propuesta-valor">
+                        <h4>Propuesta de Valor</h4>
+                        <ul>
+                            <li>Mejor comunicación en equipos académicos</li>
+                            <li>Claridad de roles y responsabilidades</li>
+                            <li>Seguimiento estructurado de tareas</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block relaciones-clientes">
+                        <h4>Relaciones con Clientes</h4>
+                        <ul>
+                            <li>Soporte digital</li>
+                            <li>Tutoriales y materiales</li>
+                            <li>Uso intuitivo de la plataforma</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block segmento-clientes">
+                        <h4>Segmento de Clientes</h4>
+                        <ul>
+                            <li>Estudiantes universitarios</li>
+                            <li>Equipos de trabajo académicos</li>
+                            <li>Docentes interesados</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block recursos-clave">
+                        <h4>Recursos Clave</h4>
+                        <ul>
+                            <li>Plataforma tecnológica</li>
+                            <li>Base de usuarios</li>
+                            <li>Equipo de soporte técnico</li>
+                            <li>Contenidos de formación</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block canales">
+                        <h4>Canales</h4>
+                        <ul>
+                            <li>Aplicación web</li>
+                            <li>Plataformas educativas</li>
+                            <li>Redes sociales internas</li>
+                            <li>Comunicación universitaria</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block estructura-costos">
+                        <h4>Estructura de Costos</h4>
+                        <ul>
+                            <li>Desarrollo de software</li>
+                            <li>Infraestructura tecnológica</li>
+                            <li>Soporte técnico</li>
+                            <li>Marketing y difusión</li>
+                        </ul>
+                    </div>
+
+                    <div class="canvas-block flujo-ingresos">
+                        <h4>Flujo de Ingresos</h4>
+                        <ul>
+                            <li>Suscripción institucional</li>
+                            <li>Anuncios (versiones gratuitas)</li>
+                            <li>Versión premium</li>
+                            <li>Convenios institucionales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inversión -->
+    <section id="inversion" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">07</span>
+                Inversión de $20.000.000
+            </h2>
+
+            <p class="section-intro">Distribución de recursos para los primeros seis meses del proyecto:</p>
+
+            <div class="inversion-table-wrapper">
+                <table class="inversion-table">
+                    <thead>
+                        <tr>
+                            <th>Rubro</th>
+                            <th>Monto (COP)</th>
+                            <th>% del Total</th>
+                            <th>Justificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rubro-name">Desarrollo de plataforma tecnológica</td>
+                            <td class="monto">$8.000.000</td>
+                            <td class="porcentaje"><span class="percent-bar" style="width: 40%">40%</span></td>
+                            <td>Diseño, programación, pruebas y despliegue del sistema</td>
+                        </tr>
+                        <tr>
+                            <td class="rubro-name">Infraestructura y hosting</td>
+                            <td class="monto">$3.000.000</td>
+                            <td class="porcentaje"><span class="percent-bar" style="width: 15%">15%</span></td>
+                            <td>Servidores, dominios, bases de datos y servicios en la nube</td>
+                        </tr>
+                        <tr>
+                            <td class="rubro-name">Capacitación en habilidades blandas</td>
+                            <td class="monto">$3.500.000</td>
+                            <td class="porcentaje"><span class="percent-bar" style="width: 17.5%">17.5%</span></td>
+                            <td>Diseño e implementación de talleres y material pedagógico</td>
+                        </tr>
+                        <tr>
+                            <td class="rubro-name">Soporte técnico y mantenimiento</td>
+                            <td class="monto">$2.000.000</td>
+                            <td class="porcentaje"><span class="percent-bar" style="width: 10%">10%</span></td>
+                            <td>Corrección de errores, ajustes y acompañamiento a usuarios</td>
+                        </tr>
+                        <tr>
+                            <td class="rubro-name">Marketing interno y comunicación</td>
+                            <td class="monto">$1.500.000</td>
+                            <td class="porcentaje"><span class="percent-bar" style="width: 7.5%">7.5%</span></td>
+                            <td>Campañas de difusión, material gráfico y activaciones</td>
+                        </tr>
+                        <tr>
+                            <td class="rubro-name">Evaluación y medición de impacto</td>
+                            <td class="monto">$2.000.000</td>
+                            <td class="porcentaje"><span class="percent-bar" style="width: 10%">10%</span></td>
+                            <td>Encuestas, análisis de datos, métricas y reportes</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td class="rubro-name"><strong>TOTAL</strong></td>
+                            <td class="monto"><strong>$20.000.000</strong></td>
+                            <td class="porcentaje"><strong>100%</strong></td>
+                            <td><strong>Inversión para los primeros 6 meses</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="inversion-visual">
+                <h3>Distribución Visual</h3>
+                <div class="distribution-bars">
+                    <div class="bar-item">
+                        <div class="bar" style="height: 40%; background: linear-gradient(135deg, #007BFF, #0056b3)">
+                            <span>40%</span>
+                        </div>
+                        <p>Desarrollo</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar" style="height: 17.5%; background: linear-gradient(135deg, #17a2b8, #138496)">
+                            <span>17.5%</span>
+                        </div>
+                        <p>Capacitación</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar" style="height: 15%; background: linear-gradient(135deg, #28a745, #1e7e34)">
+                            <span>15%</span>
+                        </div>
+                        <p>Infraestructura</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar" style="height: 10%; background: linear-gradient(135deg, #ffc107, #e0a800)">
+                            <span>10%</span>
+                        </div>
+                        <p>Soporte</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar" style="height: 10%; background: linear-gradient(135deg, #fd7e14, #e8590c)">
+                            <span>10%</span>
+                        </div>
+                        <p>Evaluación</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar" style="height: 7.5%; background: linear-gradient(135deg, #6f42c1, #552bb8)">
+                            <span>7.5%</span>
+                        </div>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riesgos -->
+    <section id="riesgos" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">08</span>
+                Riesgos y Mitigación
+            </h2>
+
+            <p class="section-intro">Identificación de riesgos y estrategias de mitigación:</p>
+
+            <div class="riesgos-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="risk-icon"><i class="fas fa-users"></i></span>
+                        <span class="risk-title">Baja adopción de la plataforma</span>
+                        <span class="risk-badge">Social / D1</span>
+                        <span class="accordion-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="risk-detail">
+                            <h4>Origen:</h4>
+                            <p>Debilidad (D1) / Factores Sociales</p>
+                        </div>
+                        <div class="risk-detail">
+                            <h4>Estrategia de Mitigación:</h4>
+                            <p>Campañas de sensibilización, tutoriales claros, acompañamiento inicial y soporte cercano.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="risk-icon"><i class="fas fa-book"></i></span>
+                        <span class="risk-title">Resistencia a capacitación en habilidades blandas</span>
+                        <span class="risk-badge">Social / D2</span>
+                        <span class="accordion-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="risk-detail">
+                            <h4>Origen:</h4>
+                            <p>Debilidad (D2) / Factores Sociales</p>
+                        </div>
+                        <div class="risk-detail">
+                            <h4>Estrategia de Mitigación:</h4>
+                            <p>Ofrecer microcursos breves, gamificación, certificaciones internas y reconocimiento.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="risk-icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="risk-title">Competencia de herramientas genéricas</span>
+                        <span class="risk-badge">Tecnológico / A1</span>
+                        <span class="accordion-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="risk-detail">
+                            <h4>Origen:</h4>
+                            <p>Amenaza (A1) / Factores Tecnológicos</p>
+                        </div>
+                        <div class="risk-detail">
+                            <h4>Estrategia de Mitigación:</h4>
+                            <p>Diferenciarse por el enfoque integral (técnico + humano) y la adaptación al contexto local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="risk-icon"><i class="fas fa-hand-paper"></i></span>
+                        <span class="risk-title">Baja participación sostenida en procesos voluntarios</span>
+                        <span class="risk-badge">Social / A2</span>
+                        <span class="accordion-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="risk-detail">
+                            <h4>Origen:</h4>
+                            <p>Amenaza (A2) / Factores Sociales</p>
+                        </div>
+                        <div class="risk-detail">
+                            <h4>Estrategia de Mitigación:</h4>
+                            <p>Integrar el uso de la plataforma a actividades curriculares y proyectos de aula.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="risk-icon"><i class="fas fa-wallet"></i></span>
+                        <span class="risk-title">Limitaciones presupuestales de la institución</span>
+                        <span class="risk-badge">Económico</span>
+                        <span class="accordion-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="risk-detail">
+                            <h4>Origen:</h4>
+                            <p>Factores Económicos</p>
+                        </div>
+                        <div class="risk-detail">
+                            <h4>Estrategia de Mitigación:</h4>
+                            <p>Proponer fases de implementación y modelos de costos escalonados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan de Trabajo -->
+    <section id="plan" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">09</span>
+                Plan de Trabajo – Primeros 6 Meses
+            </h2>
+
+            <p class="section-intro">Actividades principales por mes en caso de ser seleccionado el proyecto:</p>
+
+            <div class="timeline">
+                <div class="timeline-item" style="animation-delay: 0s">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Mes 1</h3>
+                        <p>Ajuste de requerimientos, diseño funcional y técnico de la plataforma, definición de roles y alcance del piloto.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="animation-delay: 0.1s">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Mes 2</h3>
+                        <p>Desarrollo del módulo de gestión de tareas y roles, diseño de interfaz y pruebas internas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="animation-delay: 0.2s">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Mes 3</h3>
+                        <p>Desarrollo del módulo de comunicación y seguimiento, integración con sistemas existentes (si aplica).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="animation-delay: 0.3s">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Mes 4</h3>
+                        <p>Diseño e implementación de los primeros talleres de habilidades blandas, pruebas piloto con grupos reducidos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="animation-delay: 0.4s">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">5</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Mes 5</h3>
+                        <p>Implementación del piloto con equipos académicos seleccionados, acompañamiento y soporte técnico.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="animation-delay: 0.5s">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">6</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Mes 6</h3>
+                        <p>Recolección de datos (uso, satisfacción, impacto), ajustes a la plataforma y preparación de informe de resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusiones -->
+    <section id="conclusiones" class="section section-content">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">10</span>
+                Conclusiones
+            </h2>
+
+            <div class="conclusions-content">
+                <div class="conclusion-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Viabilidad Confirmada</h3>
+                    <p>El estudio de mercado y la formulación inicial confirmaron la viabilidad y la necesidad de abordar la problemática de la coordinación y el bienestar en los equipos de trabajo universitarios.</p>
+                </div>
+
+                <div class="conclusion-card">
+                    <i class="fas fa-target"></i>
+                    <h3>Público Objetivo Identificado</h3>
+                    <p>Se validó que el segmento de equipos de la Universidad Luis Amigó con baja rotación o bajo rendimiento es el público objetivo principal.</p>
+                </div>
+
+                <div class="conclusion-card">
+                    <i class="fas fa-shield-check"></i>
+                    <h3>Intervención Justificada</h3>
+                    <p>La necesidad de intervención está justificada por datos esperados a recolectar (tiempos perdidos, niveles de estrés, frecuencia de conflictos).</p>
+                </div>
+
+                <div class="conclusion-card">
+                    <i class="fas fa-cube"></i>
+                    <h3>Solución Integral</h3>
+                    <p>La plataforma propuesta articula herramientas de gestión de tareas con procesos de formación en habilidades blandas, generando una respuesta coherente.</p>
+                </div>
+
+                <div class="conclusion-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Coherencia Estratégica</h3>
+                    <p>Los análisis DOFA y PESTEL demostraron la coherencia estratégica del proyecto, señalando que existen oportunidades claras para su implementación.</p>
+                </div>
+
+                <div class="conclusion-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Potencial de Impacto</h3>
+                    <p>A pesar de amenazas identificadas, las alianzas con Bienestar Universitario pueden apalancar la solución propuesta y potenciar su impacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Autores</h4>
+                    <p>Juan Camilo Ossa Gutiérrez</p>
+                    <p>Luis Fernando Rendón López</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Institución</h4>
+                    <p>Universidad Católica Luis Amigó</p>
+                    <p>Facultad de Ingeniería</p>
+                    <p>Línea de investigación: Rendimiento de equipos de trabajo</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ubicación</h4>
+                    <p>Medellín, Colombia</p>
+                    <p>Año: 2026</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EquiFlow. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
