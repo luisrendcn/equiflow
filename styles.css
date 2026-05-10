@@ -1166,8 +1166,7 @@ body {
 
 .timeline {
     position: relative;
-    padding: 3rem 0;
-    max-width: 1000px;
+    padding: 2rem 0;
 }
 
 .timeline::before {
@@ -1182,26 +1181,29 @@ body {
 }
 
 .timeline-item {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
 }
 
 .timeline-item:nth-child(odd) {
-    flex-direction: row;
+    margin-left: 0;
+    margin-right: 50%;
+    padding-right: 3rem;
+    text-align: right;
 }
 
 .timeline-item:nth-child(even) {
-    flex-direction: row-reverse;
+    margin-left: 50%;
+    margin-right: 0;
+    padding-left: 3rem;
+    text-align: left;
 }
 
 .timeline-marker {
-    flex: 0 0 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
     z-index: 10;
 }
 
@@ -1221,17 +1223,20 @@ body {
 }
 
 .timeline-content {
-    flex: 1;
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid var(--primary);
     transition: all var(--transition-base);
+    display: inline-block;
+    min-width: 250px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    border-left: 4px solid var(--primary);
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    border-left: none;
     border-right: 4px solid var(--primary);
 }
 
@@ -1255,50 +1260,83 @@ body {
     line-height: 1.6;
 }
 
-@media (max-width: 1200px) {
-    .timeline {
-        padding-left: 0;
-        padding-right: 0;
+@media (max-width: 992px) {
+    .timeline::before {
+        left: 30px;
     }
 
     .timeline-item {
-        gap: 1.5rem;
-        margin-bottom: 3rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 100px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+
+    .timeline-item:nth-child(odd) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 100px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 100px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-marker {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .timeline-content {
+        border-left: 4px solid var(--primary) !important;
+        border-right: none !important;
+        text-align: left;
     }
 }
 
 @media (max-width: 768px) {
+    .timeline {
+        padding-left: 0;
+    }
+
     .timeline::before {
-        left: 25px;
+        left: 20px;
     }
 
     .timeline-item {
-        flex-direction: column !important;
-        gap: 0;
-        margin-left: 0;
-        padding-left: 80px;
-    }
-
-    .timeline-item:nth-child(even) {
-        flex-direction: column !important;
-        padding-left: 80px;
+        margin-bottom: 2.5rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 70px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
     }
 
     .timeline-marker {
-        position: absolute;
         left: -50px;
-        top: 0;
-        flex: none;
+        top: 5px;
+        transform: translateX(0);
+    }
+
+    .timeline-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
     }
 
     .timeline-content {
-        border-left: 4px solid var(--primary);
-        border-right: none;
-    }
-
-    .timeline-item:nth-child(even) .timeline-content {
-        border-left: 4px solid var(--primary);
-        border-right: none;
+        border-left: 4px solid var(--primary) !important;
+        border-right: none !important;
+        padding: 1.25rem;
+        min-width: auto;
+        text-align: left;
     }
 
     .timeline-content h3 {
@@ -1307,12 +1345,6 @@ body {
 
     .timeline-content p {
         font-size: 0.9rem;
-    }
-
-    .timeline-number {
-        width: 50px;
-        height: 50px;
-        font-size: 1.1rem;
     }
 }
 
