@@ -437,4 +437,4 @@ if ('IntersectionObserver' in window) {
     images.forEach(img => imgObserver.observe(img));
 }
 
-console.log('EquiFlow Interactive Platform loaded successfully ✨');
+console.log('EquiFlow Interactive Platform v1.0.3 loaded successfully ✨ (May 10, 2026 - Timeline Fixed)');
