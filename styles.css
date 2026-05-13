@@ -1349,6 +1349,112 @@ body {
 }
 
 /* ===============================================
+   TABLA PLAN DE TRABAJO
+   =============================================== */
+
+.plan-table-wrapper {
+    background: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.plan-table thead {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+}
+
+.plan-table th {
+    padding: 1.25rem;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.plan-table tbody tr {
+    border-bottom: 1px solid var(--gray-200);
+    transition: all var(--transition-fast);
+}
+
+.plan-table tbody tr:hover {
+    background: var(--primary-light);
+    transform: scale(1.01);
+}
+
+.plan-table td {
+    padding: 1rem 1.25rem;
+}
+
+.mes-number {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.1rem;
+    text-align: center;
+    width: 60px;
+    min-width: 60px;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0.05) 100%);
+    border-radius: 0.5rem;
+}
+
+.plan-table td:last-child {
+    color: var(--gray-700);
+    line-height: 1.7;
+}
+
+/* Responsividad para tabla de plan */
+@media (max-width: 768px) {
+    .plan-table {
+        font-size: 0.85rem;
+    }
+
+    .plan-table th,
+    .plan-table td {
+        padding: 0.75rem;
+    }
+
+    .plan-table thead {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===============================================
+   ENLACES DE AUTORES
+   =============================================== */
+
+.author-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.author-link i {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    transition: all var(--transition-fast);
+}
+
+.author-link:hover i {
+    opacity: 1;
+    transform: translate(2px, -2px);
+}
+
+/* ===============================================
    CONCLUSIONES
    =============================================== */
 
